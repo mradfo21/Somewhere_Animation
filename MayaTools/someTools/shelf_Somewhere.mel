@@ -1,0 +1,110 @@
+global proc shelf_Somewhere () {
+    global string $gBuffStr;
+    global string $gBuffStr0;
+    global string $gBuffStr1;
+
+
+    shelfButton
+        -enableCommandRepeat 1
+        //-flexibleWidthType 3
+        //-flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Refresh Somewhere Tools shelf" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Refresh Somewhere Tools Shelf" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image (`internalVar -usd` + "someTools/icons/icon_shelfRefresh.png")
+        -image1 (`internalVar -usd` + "someTools/icons/icon_shelfRefresh.png") 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "eval(\"source \\\"\" + `internalVar -usd` + \"someTools/someInstaller.mel\\\"\");" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton    
+        -enableCommandRepeat 1
+        //-flexibleWidthType 3
+        //-flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Launch Somewhere Tools" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Somewhere Tools" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image (`internalVar -usd` + "someTools/icons/icon_someTools.png")
+        -image1 (`internalVar -usd` + "someTools/icons/icon_someTools.png")
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import sys, os\n\nscript = cmds.internalVar(usd=True) + 'someTools/someLauncher.py'\n\nfilename = os.path.basename(script)\ndir = os.path.dirname(script)\n\npaths = sys.path\npathfound = 0\nfor path in paths:\n\tif (dir == path):\n\t\tpathfound = 1\n\t\t\nif not pathfound:\n\tsys.path.append(dir)\n\t\nimport someLauncher\nreload(someLauncher)" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        //-flexibleWidthType 3
+        //-flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Batch Asset Renae" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Batch Asset Renamer" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image (`internalVar -usd` + "someTools/icons/icon_shRename.png")
+        -image1 (`internalVar -usd` + "someTools/icons/icon_shRename.png")
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "eval(\"source \\\"\" + `internalVar -usd` + \"someTools/shRename.mel\\\"\");" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+} 

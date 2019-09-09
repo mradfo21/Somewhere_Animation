@@ -1,0 +1,919 @@
+//
+// Written by Seth Hall
+// sethtylerhall@gmail.com
+// www.pixill.com
+// April 2019
+//
+// Shelf Command:
+// eval("source \"" + `internalVar -usd` + "shRename.mel\"");
+//
+// v1.0
+//
+
+global proc string shRenStrRepeat(string $string, int $times) {
+   string $output = "";
+
+   int $i;
+
+   for ($i = 0; $i < $times; $i++) {
+      $output += $string;
+   }
+
+   return $output;
+}
+
+global proc string shRenLeftPad(string $input, int $pad_length, string $pad_character) {
+   string $paddedString = "";
+
+   int $length = $pad_length - size($input);
+
+   return (shRenStrRepeat($pad_character, $length) + $input);
+}
+
+global proc string shRenVersionUpString(string $input, int $padding) {
+   int $temp = $input;
+
+   $temp++;
+
+   return shRenLeftPad($temp, $padding, "0");
+}
+
+// this will return the index number of a specific item in an array
+
+global proc int shRenIntFirstMatchIndex(string $haystack[], string $needle) {
+	int $i;
+
+	for ($i = 0; $i < size($haystack); $i++) {
+		if ($haystack[$i] == $needle) {
+			return $i;
+		}
+	}
+
+	return -1;
+}
+
+global proc int shRenStrInArray(string $haystack[], string $needle) {
+	int $i;
+	for ($i = 0; $i < size($haystack); $i++) {
+		if ($haystack[$i] == $needle) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
+// return duplicate items of an array
+global proc string[] shRenStrDupesInArray(string $haystack[], string $needle) {
+	string $output[];
+	int $count = 0;
+
+	int $i;
+	for ($i = 0; $i < size($haystack); $i++) {
+		if ($haystack[$i] == $needle) {
+			$output[$count] = $haystack[$i];
+			$count++;
+		}
+	}
+
+	return $output;
+}
+
+// Get the node type from a transform object
+global proc string shRenTypeFromXform(string $xform) {
+	string $getShapes[];
+	string $type;
+
+	if (`nodeType $xform` == "transform") {
+		$getShapes = `listRelatives -s -f $xform`;
+	}
+
+	if (`objExists $getShapes[0]`) {
+		$type = `nodeType $getShapes[0]`;
+	} else {
+		$type = `nodeType $xform`;
+	}
+
+	return $type;
+}
+
+global proc int shRenStrArrayDupes(string $haystack[]) {
+	int $output = 0;
+	int $count;
+
+	int $i;
+	for ($i = 0; $i < size($haystack); $i++) {
+		string $dupes[] = `shRenStrDupesInArray $haystack $haystack[$i]`;
+
+		if (size($dupes) > 1) {
+			$count++;
+		}
+	}
+
+	if ($count > 1) {
+		$output = 1;
+	}
+
+	return $output;
+}
+
+// 0 = everything checks out fine
+// 1 = there are dupes or errors in the list
+global proc int shRenValidateRenamedList(string $array[]) {
+	int $output = false;
+
+	int $dupes = `shRenStrArrayDupes $array`;
+
+	if ($dupes > 0) {
+	}
+
+	return $output;
+
+}
+
+global proc string[] shRenValidateWorldSelection(string $array[]) {
+	string $output[];
+
+	if (size($array) > 0) {
+		int $count = 0;
+
+		int $i;
+		for ($i = 0; $i < size($array); $i++) {
+			if (!`gmatch $array[$i] "*.*"`) {
+				$output[$count] = $array[$i];
+			} else {
+				string $buffer[];
+				tokenize $array[$i] "." $buffer;
+
+				$output[$count] = $buffer[0];
+			}
+
+			$count++;
+		}
+	}
+
+	return $output;
+}
+
+global proc shRenPopulateObjectList(string $listName, string $array[]) {
+	string $selected[] = `textScrollList -q -si $listName`;	// query the current selected item in the list
+	int $count = `textScrollList -q -ni $listName`;			// query the total number of items in the list
+	$objects = `textScrollList -q -ai $listName`; 			// query what objects may already be in the list
+
+	string $cleanArray[] = `shRenValidateWorldSelection $array`;
+
+	int $i;
+	for ($i = 0; $i < size($cleanArray); $i++) {
+		if (`objExists $cleanArray[$i]` && !`shRenStrInArray $objects $cleanArray[$i]`) {
+			// lets ensure we don't have a component selected, if so lets just grab whatever the object is instead
+			textScrollList -e -append $cleanArray[$i] $listName;
+
+			$objects[$count] = $cleanArray[$i];
+			$count++;
+		}
+	}
+
+	// after getting the index of the array we need to add 1
+	// textScrollList edit\query commands begin with 1 instad of 0
+	int $getSelectedIndex = `shRenIntFirstMatchIndex $objects $selected[0]` + 1;
+
+	if ($getSelectedIndex > 0) {
+		textScrollList -e -sii $getSelectedIndex $listName; 
+	} else {
+		textScrollList -e -sii 1 $listName; 
+	}
+}
+
+global proc string shRenStripInvalidCharacters(string $text) {
+	string $invalid[] = { 
+		"<", ">", ":", "\"", "//", "|", "?", "*",
+		"!", "@", "#", "$", "%", "^", "&", "(", ")",
+		"=", "+", "[", "]", "{", "}", ";", ",", ".",
+		"?", "`", "~", " "
+	};
+
+	int $i;
+	for ($i = 0; $i < size($invalid); $i++) {
+		$text = `substituteAllString $text $invalid[$i] ""`;
+	}
+
+	return $text;
+}
+
+global proc string shRenReplaceTextWith(string $name, string $searchFor, string $replaceWith) {
+	return $output = `substituteAllString $name $searchFor $replaceWith`;
+}
+
+global proc string[] shRenStripCounterFromName(string $name) {
+	string $output[];
+	int $count;
+
+	string $buffer[];
+	tokenize $name "_" $buffer;
+
+	int $i;
+	for ($i = 0; $i < size($buffer); $i++) {
+		string $match = `match "^[0-9]+" $buffer[$i]`;
+
+		if (size($match) < 1) {
+			$output[$count] = $buffer[$i];
+			$count++;
+		}
+	}
+
+	return $output;
+}
+
+global proc string shRenRemoveNameCounter(string $name) {
+	string $output;
+
+	string $stripCounter[] = `shRenStripCounterFromName $name`;
+
+	if (size($stripCounter) == 1) {
+		$output = $stripCounter[0];
+
+	} else if (size($stripCounter) > 1) {
+		$output = ($stripCounter[0] + "_");
+		int $i;
+		for ($i = 1; $i < size($stripCounter); $i++) {
+			if ($i != size($stripCounter)-1) {
+				$output += ($stripCounter[$i] + "_");
+			} else {
+				$output += $stripCounter[$i];
+			}
+		}
+	} else {
+		$output = $name;
+	}
+
+	return $output;
+}
+
+global proc string shRenReplaceNamePrefix(string $name, string $prefix) {
+	string $output;
+
+	string $buffer[];
+	tokenize $name "_" $buffer;
+
+	print $buffer;
+
+	if (size($buffer) > 1) {
+		$output = $prefix;
+
+		int $i;
+		for ($i = 1; $i < size($buffer); $i++) {
+			if ($i != size($buffer)-1) {
+				$output += "_" + $buffer[$i];
+			} else {
+				$output += "_" + $buffer[$i];
+			}
+		}
+	} else {
+		$output = $name;
+	}
+	
+	return $output;
+}
+
+global proc string shRenRemoveNamePrefix(string $name) {
+	string $output;
+
+	string $buffer[];
+	tokenize $name "_" $buffer;
+
+	if (size($buffer) > 1) {
+		int $i;
+		for ($i = 1; $i < size($buffer); $i++) {
+			if ($i != size($buffer)-1) {
+				$output += $buffer[$i] + "_";
+			} else {
+				$output += $buffer[$i];
+			}
+		}
+	} else {
+		$output = $name;
+	}
+	
+	return $output;
+}
+
+global proc string shRenReplaceNameSuffix(string $name, string $suffix) {
+	string $output;
+
+	string $buffer[];
+	tokenize $name "_" $buffer;
+
+	if (size($buffer) > 1) {
+		int $i;
+		for ($i = 0; $i < size($buffer); $i++) {
+			if ($i != size($buffer)-1) {
+				$output += $buffer[$i] + "_";
+			} else {
+				$output += $suffix;
+			}
+		}
+	} else {
+		$output = $name;
+	}
+	
+	return $output;
+}
+
+global proc string shRenRemoveNameSuffix(string $name) {
+	string $output;
+
+	string $buffer[];
+	tokenize $name "_" $buffer;
+
+	if (size($buffer) > 1) {
+		int $i;
+		for ($i = 0; $i < size($buffer)-1; $i++) {
+			if ($i != size($buffer)-2) {
+				$output += $buffer[$i] + "_";
+			} else {
+				$output += $buffer[$i];
+			}
+		}
+	} else {
+		$output = $name;
+	}
+	
+	return $output;
+}
+
+global proc shRenResetRenameUI() {
+	textField -e -tx "" shRenameNewName;
+
+	textField -e -tx "" shRenamePrefix;
+	checkBox -e -v 0 shRenameDoPrefix;
+	optionMenu -e -sl 1 shRenamePrefixMode;
+
+	textField -e -tx "" shRenameSuffix;
+	checkBox -e -v 0 shRenameDoSuffix;
+	optionMenu -e -sl 1 shRenameSuffixMode;
+
+	checkBox -e -v 0 shRenameDoCounter;
+	intField -e -v 0 shRenameCounterStartNumber;
+	intField -e -v 2 shRenameCounterPadding;
+	optionMenu -e -sl 1 shRenamePaddingMode;
+
+	checkBox -e -v 0 shRenameDoAddType;
+	optionMenu -e -sl 2 shRenameAddTypeMode;
+
+	checkBox -e -v 0 shRenameDoTextReplace;
+	textField -e -tx "" shRenameReplaceThisText;
+	textField -e -tx "" shRenameReplaceWithText;
+}
+
+// This will validate the Export Path and reformat it while also removing illegal characters
+global proc shRenUpdatePreviewList(string $objects[]) {
+	string $newName = `textField -q -tx shRenameNewName`;
+
+	string $prefix = `textField -q -tx shRenamePrefix`;
+	int $doPrefix = `checkBox -q -v shRenameDoPrefix`;
+	int $prefixMode = `optionMenu -q -sl shRenamePrefixMode`;
+
+	string $suffix = `textField -q -tx shRenameSuffix`;
+	int $doSuffix = `checkBox -q -v shRenameDoSuffix`;
+	int $suffixMode = `optionMenu -q -sl shRenameSuffixMode`;
+
+	int $doCounter = `checkBox -q -v shRenameDoCounter`;
+	int $counter = `intField -q -v shRenameCounterStartNumber`;
+	int $padding = `intField -q -v shRenameCounterPadding`;
+	int $padMode = `optionMenu -q -sl shRenamePaddingMode`;
+
+	int $doAddType = `checkBox -q -v shRenameDoAddType`;
+	int $addTypeMode = `optionMenu -q -sl shRenameAddTypeMode`;
+
+	int $doReplace = `checkBox -q -v shRenameDoTextReplace`;
+	string $replace = `textField -q -tx shRenameReplaceThisText`;
+	string $replaceWith = `textField -q -tx shRenameReplaceWithText`;
+
+	textScrollList -e -ra shRenamedScrollList;
+
+	int $i;
+	for ($i = 0; $i < size($objects); $i++) {
+		string $currentName = $objects[$i];
+		string $renamedName;
+		string $type;
+
+		if ($doReplace > 0) {
+			$currentName = `shRenReplaceTextWith $currentName $replace $replaceWith`;
+		}
+
+		if ($doAddType > 0) {
+			$type = `shRenTypeFromXform $objects[$i]`;
+		}
+
+		if (size($newName) > 0) {
+			$currentName = $newName;
+		}
+
+		if ($doPrefix > 0) {
+			if ($prefixMode == 1) {
+				$renamedName += ($prefix + "_");
+			} else if ($prefixMode == 2) {
+				$currentName = `shRenRemoveNamePrefix $currentName`;
+			} else if ($prefixMode == 3) {
+				$currentName = `shRenReplaceNamePrefix $currentName $prefix`;
+			}
+		}
+
+		if ($doAddType > 0 && $addTypeMode == 1) {
+			$renamedName += ($type + "_");
+		}
+
+		$renamedName += $currentName;
+
+		if ($doSuffix > 0) {
+			if ($suffixMode == 1) {
+				$renamedName += ("_" + $suffix);
+			} else if ($suffixMode == 2) {
+				$renamedName = `shRenRemoveNameSuffix $renamedName`;
+			} else if ($suffixMode == 3) {
+				$renamedName = `shRenReplaceNameSuffix $renamedName $suffix`;
+			}
+		}
+
+		if ($addTypeMode == 2 && $doAddType > 0) {
+			$renamedName += ("_" + $type);
+		}
+
+		if ($doCounter > 0) {
+			if ($padMode == 1) {
+				$renamedName += ("_" + `shRenVersionUpString ($counter - 1) $padding`);
+				$counter++;
+			} else if ($padMode == 2) {
+				$renamedName = `shRenRemoveNameCounter $renamedName`;
+			} else if ($padMode == 3) {
+				$renamedName = `shRenRemoveNameCounter $renamedName`;
+				$renamedName += ("_" + `shRenVersionUpString ($counter - 1) $padding`);
+				$counter++;
+			}
+
+		}
+
+		if ($doAddType > 0 && $addTypeMode == 3) {
+			$renamedName += ("_" + $type);
+		}
+
+		textScrollList -e -append $renamedName shRenamedScrollList;
+	}
+}
+
+global proc shRenObjectListControl(string $operation) {
+	string $listSelect[] = `textScrollList -q -si shRenameObjectScrollList`;
+	int $i;
+
+	switch($operation) {
+		case "add":
+			string $worldSelection[] = `ls -sl`;
+
+			if (size($worldSelection) > 0) {
+				shRenPopulateObjectList shRenameObjectScrollList $worldSelection;
+			}
+		break;
+
+		case "remove":
+			if (size($listSelect) > 0) {
+				for ($i = 0; $i < size($listSelect); $i++) {
+					textScrollList -e -ri $listSelect[$i] shRenameObjectScrollList;
+				}
+			}
+		break;
+
+		case "clear":
+			textScrollList -e -ra shRenameObjectScrollList;
+			textScrollList -e -ra shRenamedScrollList;
+		break;
+	}
+
+	shRenameCheckUI();
+}
+
+global proc int[] shRenSanitizeObjectsList() {
+	string $objects[] = `textScrollList -q -ai shRenameObjectScrollList`;
+
+	int $output[];
+	int $count = 0;
+
+	int $i;
+	for ($i = 0; $i < size($objects); $i++) {
+		if (!`objExists $objects[$i]`) {
+			$output[$count] = ($i + 1);
+
+			textScrollList -e -rii $output[$count] shRenameObjectScrollList;
+			textScrollList -e -rii $output[$count] shRenamedScrollList;
+
+			$count++;
+		}
+	}
+
+	return $output;
+}
+
+global proc string[] shRenameObjects() {
+	string $output[];
+	string $error[];
+
+	string $objects[] = `textScrollList -q -ai shRenameObjectScrollList`;
+	string $namedObjects[] = `textScrollList -q -ai shRenamedScrollList`;
+
+	if (size($objects) != size($namedObjects)) {
+		print ("Data discrepancy in your Objects list. Is there missing data?\n");
+	} else {
+		int $count = 0;
+		int $errorCount = 0;
+
+		textScrollList -e -ra shRenameObjectScrollList;
+		textScrollList -e -ra shRenamedScrollList;
+
+		int $i;
+		for ($i = 0; $i < size($objects); $i++) {
+			if (`objExists $objects[$i]`) {
+				$output[$count] = `rename $objects[$i] $namedObjects[$i]`;
+
+				textScrollList -e -a $output[$count] shRenameObjectScrollList;
+				textScrollList -e -a $output[$count] shRenamedScrollList;
+
+				$count++;
+			} else {
+				$error[$errorCount] = $objects[$i];
+				$errorCount++;
+			}
+		}
+
+		if ($errorCount > 0) {
+			print ("--- Errors renaming the following data\n");
+			print $error;
+			print ("Renamed " + size($output) + " of " + size($objects) + ". Errors during the process, check script editor for details ...\n");
+		} else {
+			print ("Successfully renamed " + size($output) + " objects.\n");
+		}
+
+		shRenResetRenameUI();
+	}
+
+	return $output;
+}
+
+global proc shRenameCheckUI() {
+	string $objects[] = `textScrollList -q -ai shRenameObjectScrollList`;
+	int $numObjects = `textScrollList -q -ni shRenameObjectScrollList`;
+
+	string $errorMessage = "Check Your Parameters!";
+	float $buttonColor[] = { 0.9, 0.4, 0.4 };
+	int $error = 0;
+
+	frameLayout -e -l ("Objects: " + $numObjects) shRenameObjectListFrame;
+	frameLayout -e -l ("To Be Processed: " + $numObjects) shRenamedListFrame;
+
+	int $doReplace = `checkBox -q -v shRenameDoTextReplace`;
+	string $replace = `textField -q -tx shRenameReplaceThisText`;
+	string $replaceWith = `textField -q -tx shRenameReplaceWithText`;
+
+	// lets query all our parameter data
+	string $newName = `textField -q -tx shRenameNewName`;
+	$newName = `shRenStripInvalidCharacters $newName`;
+	textField -e -tx $newName shRenameNewName;
+	int $doNewName = 0;
+
+	int $doPrefix = `checkBox -q -v shRenameDoPrefix`;
+	int $prefixMode = `optionMenu -q -sl shRenamePrefixMode`;
+	string $prefix = `textField -q -tx shRenamePrefix`;
+	$prefix = `shRenStripInvalidCharacters $prefix`;
+	textField -e -tx $prefix shRenamePrefix;
+
+	int $doSuffix = `checkBox -q -v shRenameDoSuffix`;
+	int $suffixMode = `optionMenu -q -sl shRenameSuffixMode`;
+	string $suffix = `textField -q -tx shRenameSuffix`;
+	$suffix = `shRenStripInvalidCharacters $suffix`;
+	textField -e -tx $suffix shRenameSuffix;
+
+	int $doCounter = `checkBox -q -v shRenameDoCounter`;
+	int $counter = `intField -q -v shRenameCounterStartNumber`;
+	int $padding = `intField -q -v shRenameCounterPadding`;
+	int $padMode = `optionMenu -q -sl shRenamePaddingMode`;
+
+	int $doAddType = `checkBox -q -v shRenameDoAddType`;
+	int $addTypeMode = `optionMenu -q -sl shRenameAddTypeMode`;
+
+	if (size($newName) > 0) {
+		$doNewName++;
+	}
+
+	if ($doReplace > 0) {
+		checkBox -e -en 0 -v 0 shRenameDoPrefix;
+		checkBox -e -en 0 -v 0 shRenameDoSuffix;
+		checkBox -e -en 0 -v 0 shRenameDoCounter;
+		checkBox -e -en 0 -v 0 shRenameDoAddType;
+		$doPrefix = 0;
+		$doSuffix = 0;
+		$doCounter = 0;
+		$doAddType = 0;		
+	} else {
+		checkBox -e -en 1 shRenameDoPrefix;
+		checkBox -e -en 1 shRenameDoSuffix;
+		checkBox -e -en 1 shRenameDoCounter;
+		checkBox -e -en 1 shRenameDoAddType;
+	}
+
+	textField -e -en $doPrefix shRenamePrefix;
+	optionMenu -e -en $doPrefix shRenamePrefixMode;
+
+	textField -e -en $doSuffix shRenameSuffix;
+	optionMenu -e -en $doSuffix shRenameSuffixMode;
+
+	intField -e -en $doCounter shRenameCounterStartNumber;
+	text -e -en $doCounter shRenameCounterPaddingLabel;
+	intField -e -en $doCounter shRenameCounterPadding;
+	optionMenu -e -en $doCounter shRenamePaddingMode;
+
+	optionMenu -e -en $doAddType shRenameAddTypeMode;
+
+	textField -e -en $doReplace shRenameReplaceThisText;
+	text -e -en $doReplace shRenameWithLabel;
+	textField -e -en $doReplace shRenameReplaceWithText;
+
+	if ($prefixMode == 2) {
+		textField -e -en 0 shRenamePrefix;
+	}
+
+	if ($suffixMode == 2) {
+		textField -e -en 0 shRenameSuffix;
+	}
+
+	if ($doPrefix < 1 && $doSuffix < 1 && $doCounter < 1 && $doAddType < 1 && $doReplace < 1 && size($newName) < 1) {
+		$errorMessage = "Set Some Rename Conditions!";
+		$error++;
+	}
+
+	int $prefixError = 0;
+	if ($doPrefix > 0) {
+		if ($prefixMode != 2 && ($doPrefix + size($prefix)) < 2) {
+			$buttonColor = { 1.0, 0.75, 0.45 }; 
+			$errorMessage = "Prefix is Blank!";
+			$prefixError++;
+			$error++;
+		}
+	}
+
+	if ($doSuffix > 0) {
+		if ($suffixMode != 2 && ($doSuffix + size($suffix)) < 2) {
+			$buttonColor = { 1.0, 0.75, 0.45 }; 
+
+			if ($prefixError > 0) {
+				$errorMessage = "Prefix and Suffix are Blank!";
+			} else {
+				$errorMessage = "Suffix is Blank!";
+			}
+
+			$error++;
+		}
+	}
+
+	if ($doReplace > 0) {
+		if (size($replace) < 1 || size($replaceWith) < 1 || $replace == $replaceWith) {
+			$buttonColor = { 1.0, 0.75, 0.45 }; 
+			$errorMessage = "Replacement Condition Invalid!";
+			$error++;
+		}
+	}
+
+	if ($doCounter > 0) {
+		if ($padMode == 2) {
+			intField -e -en 0 shRenameCounterStartNumber;
+			intField -e -en 0 shRenameCounterPadding;
+		} else {
+			intField -e -en 1 shRenameCounterStartNumber;
+			intField -e -en 1 shRenameCounterPadding;
+		}
+	}
+
+	shRenUpdatePreviewList $objects;
+
+	string $renamedList[] = `textScrollList -q -ai shRenamedScrollList`;
+	int $dupes = `shRenStrArrayDupes $renamedList`;
+
+	if ($dupes > 0) {
+		$errorMessage = "Duplicate Object Names!";
+		$error++;
+	}
+
+	if ($numObjects < 1) {
+		menuItem -e -en 0 -c "" shRenameRemoveMenuItem;
+		menuItem -e -en 0 -c "" shRenameSanitizeMenuItem;
+		menuItem -e -en 0 -c "" shRenameClearMenuItem;
+		$errorMessage = "No Objects to Rename!";
+		$error++;
+	} else {
+		menuItem -e -en 1 -c "shRenObjectListControl \"remove\"" shRenameRemoveMenuItem;
+		menuItem -e -en 1 -c ("shRenSanitizeObjectsList(); shRenameCheckUI();") shRenameSanitizeMenuItem;
+		menuItem -e -en 1 -c "shRenObjectListControl \"clear\"" shRenameClearMenuItem;
+	}
+
+	if ($error > 0) {
+		button -e -en 0 -c "" -l $errorMessage -bgc $buttonColor[0] $buttonColor[1] $buttonColor[2] shRenameExecuteButton;
+		textScrollList -e -hlc .5 .3 .3 shRenamedScrollList;
+	} else {
+		button -e -en 1 -l ("Process " + $numObjects + " Object(s)") -c "shRenameObjects(); shRenameCheckUI();" -bgc 0.4 0.9 0.4 shRenameExecuteButton;
+		textScrollList -e -hlc .3 .5 .3 shRenamedScrollList;
+	}
+
+	shRenMirrorObjectSelection "shRenameObjectScrollList" "shRenamedScrollList";
+}
+
+global proc shRenMirrorObjectSelection(string $pickList, string $mirrorList) {
+	textScrollList -e -da $mirrorList;
+
+	int $picked[] = `textScrollList -q -sii $pickList`;
+
+	if (size($picked) > 0) {
+		int $i;
+		for ($i = 0; $i < size($picked); $i++) {
+			textScrollList -e -sii $picked[$i] $mirrorList;
+		}
+	}
+}
+
+global proc shRename() {
+	string $renameGUI = "shRenameGUI";
+
+	if (`window -exists $renameGUI`) {
+		deleteUI $renameGUI;
+	}
+
+	window
+		-title "Data Renamer v1.0"
+		-maximizeButton false
+		-minimizeButton true
+		-sizeable false
+		-resizeToFitChildren true
+		-menuBar false
+		-menuBarVisible false
+		-cc ""
+		-w 426
+		-h 400
+	$renameGUI;
+
+	int $frameWidth = 215;
+	int $frameHeight = 300;
+	int $frameGap = 2;
+
+	columnLayout -adj true;
+
+		string $form = `formLayout -numberOfDivisions 100`;
+			frameLayout -w $frameWidth -h $frameHeight -l "Objects: 0" shRenameObjectListFrame;
+				textScrollList 
+					-p shRenameObjectListFrame
+					-ann "Objects from the world to rename."
+					-ams 1
+					-sc "shRenMirrorObjectSelection \"shRenameObjectScrollList\" \"shRenamedScrollList\""
+					-dcc ""
+					-hlc .3 .4 .6
+					-nr 10
+				shRenameObjectScrollList;
+			setParent ..; // objectListFrameLayout
+
+			popupMenu -p shRenameObjectListFrame shRenamedObjectPopupList;
+				menuItem -p shRenamedObjectPopupList -en 1 -l "Add New Selected Object(s)" -c "shRenObjectListControl \"add\"" -ann "Add selected items in the world to the object list." shRenameAddMenuItem;
+				menuItem -p shRenamedObjectPopupList -d 1;
+				menuItem -p shRenamedObjectPopupList -en 1 -l "Remove Selected List Item(s)" -c "shRenObjectListControl \"remove\"" -ann "Remove selected items from the object list." shRenameRemoveMenuItem;
+				menuItem -p shRenamedObjectPopupList -en 1 -l "Sanitize Object List" -c "" -ann "Attempt to filter out any missing data from the list." shRenameSanitizeMenuItem;
+				menuItem -p shRenamedObjectPopupList -d 1;
+				menuItem -p shRenamedObjectPopupList -en 1 -l "Clear List" -c "shRenObjectListControl \"clear\"" -ann "Clear the object list." shRenameClearMenuItem;
+
+			frameLayout -w $frameWidth -h $frameHeight -l "To Be Processed: 0" shRenamedListFrame;
+				textScrollList 
+					-p shRenamedListFrame
+					-ann "Preview list of new object names."
+					-ams 1
+					-sc "shRenMirrorObjectSelection \"shRenamedScrollList\" \"shRenameObjectScrollList\""
+					-dcc ""
+					-hlc .3 .5 .3
+					-nr 10
+				shRenamedScrollList;
+			setParent ..; // objectListFrameLayout
+		setParent ..; // $form
+
+		columnLayout -adj true;
+			button -l "Rename Objects" -c "" -ann "Rename all of your objects." shRenameExecuteButton;
+
+			separator -h 2 -st "none"; separator -h 3 -st "out"; separator -h 2 -st "none";
+
+			rowColumnLayout -nc 2
+				-cs 1 23 -cw 1 60
+				-cs 2 2 -cw 2 320;
+
+				text -l "New Name" shRenameNewNameLabel;
+				textField -tx "" -cc "shRenameCheckUI" -ec "shRenameCheckUI" -tcc "shRenameCheckUI" -ann "The new name for your object. If this is empty it will use the name of the current object as-is." shRenameNewName;
+			setParent ..;
+
+			separator -h 2 -st "none"; separator -h 3 -st "in"; separator -h 2 -st "none";
+
+			rowColumnLayout -nc 4
+				-cs 1 23 -cw 1 60
+				-cs 2 2 -cw 2 115
+				-cs 3 28 -cw 3 60
+				-cs 4 2 -cw 4 115;
+
+				checkBox -l "Prefix" -cc "shRenameCheckUI()" -ann "The Prefix to add to the start of the object name." shRenameDoPrefix;
+				textField -tx "" -cc "shRenameCheckUI" -ec "shRenameCheckUI" -tcc "shRenameCheckUI" shRenamePrefix;
+
+				checkBox -l "Suffix" -cc "shRenameCheckUI()" -ann "The Suffix to add to the end of the object name." shRenameDoSuffix;
+				textField -tx "" -cc "shRenameCheckUI" -ec "shRenameCheckUI" -tcc "shRenameCheckUI" shRenameSuffix;
+			setParent ..;
+
+			separator -h 2 -st "none";
+
+			rowColumnLayout -nc 2
+				-cs 1 23 -cw 1 175
+				-cs 2 30 -cw 2 175;
+
+				optionMenu -l "Prefix Mode" -cc "shRenameCheckUI()" -ann "Determine how to process the Prefix." shRenamePrefixMode;
+					menuItem -p shRenamePrefixMode -l "Add" -ann "Prepend a new prefix to the start of the name." shRenamePrefixModeAdd;
+					menuItem -p shRenamePrefixMode -l "Remove" -ann "Attempt to remove the current Prefix." shRenamePrefixModeRemove;
+					menuItem -p shRenamePrefixMode -l "Replace" -ann "Attempt to replace the current Prefix." shRenamePrefixModeReplace;
+
+				optionMenu -l "Suffix Mode" -cc "shRenameCheckUI()" shRenameSuffixMode;
+					menuItem -p shRenameSuffixMode -l "Add" -ann "Append a new Suffix to the end of the name." shRenameSuffixModeAdd;
+					menuItem -p shRenameSuffixMode -l "Remove" -ann "Attempt to remove the current Suffix." shRenameSuffixModeRemove;
+					menuItem -p shRenameSuffixMode -l "Replace" -ann "Attempt to replace the current Suffix." shRenameSuffixModeReplace;
+			setParent ..;
+
+			separator -h 2 -st "none"; separator -h 3 -st "in"; separator -h 2 -st "none";
+
+			rowColumnLayout -nc 5
+				-cs 1 23 -cw 1 61
+				-cs 2 2 -cw 2 35
+				-cs 3 10 -cw 3 42
+				-cs 4 2 -cw 4 25
+				-cs 5 28 -cw 5 100;
+
+				checkBox -l "Counter" -cc "shRenameCheckUI()" -ann "Append a numeric Counter to each object in the list at the end of the name." shRenameDoCounter;
+				intField -v 0 -min 0 -max 9999 -s 1 -cc "shRenameCheckUI()" -dc "shRenameCheckUI()" -ec "shRenameCheckUI()" -ann "The initial starting number of the Counter." shRenameCounterStartNumber;
+
+				text -l "Padding" -ann "How many 0's to padd the numeric Counter with." shRenameCounterPaddingLabel;
+				intField -v 2 -min 1 -max 9 -s 1 -cc "shRenameCheckUI()" -dc "shRenameCheckUI()" -ec "shRenameCheckUI()" -ann "How many 0's to padd the numeric Counter with." shRenameCounterPadding;
+
+				checkBox -l "Add Node Type" -cc "shRenameCheckUI()" -ann "Attempt to query the object node type and insert it into the name based on the Mode." shRenameDoAddType;
+			setParent ..;
+
+			separator -h 2 -st "none";
+
+			rowColumnLayout -nc 2
+				-cs 1 23 -cw 1 175
+				-cs 2 28 -cw 2 175;
+
+				optionMenu -l "Padding Mode" -cc "shRenameCheckUI()" shRenamePaddingMode;
+					menuItem -p shRenamePaddingMode -l "Add" -ann "Add numerical padding to the end of the name." shRenamePaddingModeAdd;
+					menuItem -p shRenamePaddingMode -l "Remove" -ann "Attempt to remove any numerical padding from the name." shRenamePaddingModeRemove;
+					menuItem -p shRenamePaddingMode -l "Replace" -ann "Attempt to replace the current padding." shRenamePaddingModeReplace;
+
+				optionMenu -l "Type Mode" -cc "shRenameCheckUI()" shRenameAddTypeMode;
+					menuItem -p shRenameAddTypeMode -l "After Prefix" shRenameAddTypeModeAfterPrefix;
+					menuItem -p shRenameAddTypeMode -l "After Suffix" shRenameAddTypeModeAfterSuffix;
+					menuItem -p shRenameAddTypeMode -l "After Counter" shRenameAddTypeModeAfterCounter;
+
+				optionMenu -e -sl 2 shRenameAddTypeMode;
+				setParent ..;
+			setParent ..;
+
+			separator -h 2 -st "none"; separator -h 3 -st "in"; separator -h 2 -st "none";
+
+			rowColumnLayout -nc 4
+				-cs 1 23 -cw 1 60
+				-cs 2 2 -cw 2 115
+				-cs 3 2 -cw 3 40
+				-cs 4 2 -cw 4 115;
+
+				checkBox -l "Replace" -cc "shRenameCheckUI()" -ann "Attempt to do a search and replace of text within the name." shRenameDoTextReplace;
+				textField -tx "" -cc "shRenameCheckUI" -ec "shRenameCheckUI" -tcc "shRenameCheckUI" -ann "The text you'd like to replace." shRenameReplaceThisText;
+
+				text -l "with" shRenameWithLabel;
+
+				textField -tx "" -cc "shRenameCheckUI" -ec "shRenameCheckUI" -tcc "shRenameCheckUI" -ann "The text you're going to use to replace" shRenameReplaceWithText;
+			setParent ..;
+
+			separator -h 2 -st "none";
+		setParent ..; // main column layout
+
+	formLayout -e
+		// attach the object list to the main form
+		-attachForm		shRenameObjectListFrame "top" 	$frameGap
+		-attachForm		shRenameObjectListFrame "left"	$frameGap
+
+		// attach material list to left side of object list
+		-attachForm		shRenamedListFrame "top" $frameGap
+		-attachControl	shRenamedListFrame "left" $frameGap 	shRenameObjectListFrame
+	$form;
+
+	showWindow $renameGUI;
+
+	shRenObjectListControl "add";
+
+	shRenameCheckUI();
+
+}
+
+shRename();
