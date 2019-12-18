@@ -1,0 +1,4148 @@
+{
+  "title" : "",
+  "description" : "",
+  "author" : "",
+  "width" : 1920.0,
+  "height" : 1080.0,
+  "version" : "0.5",
+  "editRate" : 30,
+  "authoringClientName" :  {
+    "name" : "Camtasia Studio",
+    "platform" : "Windows",
+    "version" : "9.0"
+  },
+  "sourceBin" : [
+    {
+      "id" : 1,
+      "src" : "E:\\VersionControl\\Somewhere\\Output\\Renders\\WakeUp\\_(2).avi",
+      "rect" : [0, 0, 1920, 1080],
+      "lastMod" : "20191116T234700",
+      "sourceTracks" : [
+        {
+          "range" : [0, 713000000],
+          "type" : 0,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 1920, 1080],
+          "sampleRate" : "10000000/333333",
+          "bitDepth" : 24,
+          "numChannels" : 0,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 2,
+      "src" : "E:\\Audio\\Pond5\\109320068-wind-sandy-wind-medium-strengt.wav",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T184918",
+      "sourceTracks" : [
+        {
+          "range" : [0, 1433333333],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 3,
+      "src" : "E:\\Audio\\Pond5\\091740106-pebbles-dropped-small-rocks-gr.wav",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T184916",
+      "sourceTracks" : [
+        {
+          "range" : [0, 43666667],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 96000,
+          "bitDepth" : 24,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 4,
+      "src" : "E:\\Audio\\Pond5\\091740099-gravel-drop-multiple-granular-.wav",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T184916",
+      "sourceTracks" : [
+        {
+          "range" : [0, 137666667],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 96000,
+          "bitDepth" : 24,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 5,
+      "src" : "E:\\Audio\\Pond5\\090015674-metal-shavings-pu-sprinkle-7.wav",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T184914",
+      "sourceTracks" : [
+        {
+          "range" : [0, 151333333],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 96000,
+          "bitDepth" : 24,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 6,
+      "src" : "E:\\Audio\\Pond5\\067048273-foley-movement-foley-movement-.wav",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T190108",
+      "sourceTracks" : [
+        {
+          "range" : [0, 298333333],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 24,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 7,
+      "src" : "E:\\Audio\\Pond5\\067034448-cloth-fabric-cloth-flapping-fi.wav",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T190108",
+      "sourceTracks" : [
+        {
+          "range" : [0, 27333333],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 24,
+          "numChannels" : 1,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 8,
+      "src" : "E:\\Audio\\Pond5\\067048287-foley-movement-foley-movement-.wav",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T190442",
+      "sourceTracks" : [
+        {
+          "range" : [0, 35333333],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 24,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 9,
+      "src" : "E:\\Audio\\Pond5\\116196292-weapon-and-gear-movement-milit.wav",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T191530",
+      "sourceTracks" : [
+        {
+          "range" : [0, 157666667],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 16,
+          "numChannels" : 1,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 10,
+      "src" : "E:\\Audio\\Pond5\\113440898-clothes-cloth-rustle-movement.wav",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T191530",
+      "sourceTracks" : [
+        {
+          "range" : [0, 205000000],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 11,
+      "src" : "E:\\Audio\\Pond5\\109320066-miscellaneous-movements-moveme.wav",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T192224",
+      "sourceTracks" : [
+        {
+          "range" : [0, 396000000],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 12,
+      "src" : "E:\\Audio\\Pond5\\109320071-miscellaneous-movements-moveme.wav",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T192226",
+      "sourceTracks" : [
+        {
+          "range" : [0, 921333333],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 13,
+      "src" : "C:\\Users\\mattorialist\\Downloads\\021477000-wind-desert-sand.wav",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T193407",
+      "sourceTracks" : [
+        {
+          "range" : [0, 1066000000],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 16,
+          "numChannels" : 1,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 14,
+      "src" : "E:\\Audio\\GyorgyLigeti\\György Ligeti Lux Aeterna.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T194044",
+      "sourceTracks" : [
+        {
+          "range" : [0, 4860000000],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 15,
+      "src" : "E:\\Audio\\Statement\\MP3\\Atmosphere_SFX\\01 - Risers Statement\\Risers\\05 Arriving.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20190221T061740",
+      "sourceTracks" : [
+        {
+          "range" : [0, 87333333],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 16,
+      "src" : "E:\\Audio\\Achetype\\Archetype SFX - MP3\\01 - Risers\\Risers\\05 Dramatic Riser.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20170425T174444",
+      "sourceTracks" : [
+        {
+          "range" : [0, 76000000],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 17,
+      "src" : "E:\\Audio\\Achetype\\Archetype SFX - MP3\\05 - Undertones\\Undertones\\11 Sub Drone.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20170425T174834",
+      "sourceTracks" : [
+        {
+          "range" : [0, 314666667],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 18,
+      "src" : "E:\\Audio\\Achetype\\Archetype SFX - MP3\\05 - Undertones\\Undertones\\15 Warmth.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20170425T174834",
+      "sourceTracks" : [
+        {
+          "range" : [0, 399333333],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 19,
+      "src" : "E:\\Audio\\Achetype\\Archetype SFX - MP3\\02 - Hits\\Hits - Distortion\\DS 19 Sub Drop.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20170425T173518",
+      "sourceTracks" : [
+        {
+          "range" : [0, 60000000],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 20,
+      "src" : "E:\\Audio\\Achetype\\Archetype SFX - MP3\\03 - Whooshes\\Whooshes - Analog\\AN 19 Low Whoosh B.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20170425T165444",
+      "sourceTracks" : [
+        {
+          "range" : [0, 75333333],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 21,
+      "src" : "E:\\Audio\\Achetype\\Archetype SFX - MP3\\03 - Whooshes\\Whooshes - Analog\\AN 18 Low Whoosh A.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20170425T165444",
+      "sourceTracks" : [
+        {
+          "range" : [0, 105666667],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 22,
+      "src" : "E:\\Audio\\Achetype\\Archetype SFX - MP3\\03 - Whooshes\\Whooshes - Silk\\SL 19 Low Whoosh B.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20170425T164122",
+      "sourceTracks" : [
+        {
+          "range" : [0, 82333333],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 23,
+      "src" : "E:\\Audio\\Statement\\MP3\\Atmosphere_SFX\\01 - Risers Statement\\Risers\\02 Dream.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20190221T061740",
+      "sourceTracks" : [
+        {
+          "range" : [0, 81666667],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 24,
+      "src" : "E:\\Audio\\Statement\\MP3\\Atmosphere_SFX\\01 - Risers Statement\\Risers - Distortion\\DS 06 Powerful A.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20190221T061738",
+      "sourceTracks" : [
+        {
+          "range" : [0, 165666667],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 25,
+      "src" : "C:\\Users\\mattorialist\\Downloads\\somewhere_portal (2).png",
+      "rect" : [0, 0, 1920, 1109],
+      "lastMod" : "20191117T204945",
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 1920, 1109],
+          "sampleRate" : 0,
+          "bitDepth" : 48,
+          "numChannels" : 0,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 26,
+      "src" : "C:\\Users\\mattorialist\\Desktop\\eclipse.mp4",
+      "rect" : [0, 0, 1024, 1024],
+      "lastMod" : "20190130T175252",
+      "sourceTracks" : [
+        {
+          "range" : [0, 63000000],
+          "type" : 0,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 1024, 1024],
+          "sampleRate" : "10000000/333333",
+          "bitDepth" : 24,
+          "numChannels" : 0,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 27,
+      "src" : "C:\\Users\\mattorialist\\Downloads\\099986838-stinger-horror-violin-screechi.wav",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T210713",
+      "sourceTracks" : [
+        {
+          "range" : [0, 62000000],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 24,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 28,
+      "src" : "E:\\Audio\\Pond5\\099986838-stinger-horror-violin-screechi.wav",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20191117T210714",
+      "sourceTracks" : [
+        {
+          "range" : [0, 62000000],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 24,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 29,
+      "src" : "E:\\Audio\\Achetype\\Archetype SFX - MP3\\01 - Risers\\Risers\\10 Deep Character.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20170425T174448",
+      "sourceTracks" : [
+        {
+          "range" : [0, 150333333],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 30,
+      "src" : "E:\\Audio\\Achetype\\Archetype SFX - MP3\\01 - Risers\\Risers\\03 Escalate.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20170425T174450",
+      "sourceTracks" : [
+        {
+          "range" : [0, 59666667],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 31,
+      "src" : "E:\\Audio\\Achetype\\Archetype SFX - MP3\\01 - Risers\\Risers - Silk\\SL 07 Dark Build and Drop.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20170425T164642",
+      "sourceTracks" : [
+        {
+          "range" : [0, 299333333],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 32,
+      "src" : "E:\\Audio\\Achetype\\Archetype SFX - MP3\\02 - Hits\\Hits - Analog\\AN 19 Sub Drop.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20170425T165616",
+      "sourceTracks" : [
+        {
+          "range" : [0, 74666667],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    }
+  ],
+  "timeline" : {
+    "id" : 33,
+    "sceneTrack" : {
+      "scenes" : [
+        {
+          "duration" : 90.2,
+          "title" : "",
+          "type" : "",
+          "csml" : {
+            "tracks" : [
+              {
+                "trackIndex" : 0,
+                "medias" : [
+                  {
+                    "id" : 34,
+                    "_type" : "VMFile",
+                    "src" : 26,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "eclipse"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : 6.65636434860062e-11,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : 24.0000000000344,
+                        "interp" : "eioe"
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.628906249999962,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.628906249999962,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 101,
+                    "duration" : 189,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 189,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false,
+                      "default-scale0" : 1.0,
+                      "default-scale1" : 1.0,
+                      "default-translation0" : 0.0,
+                      "default-translation1" : 0.0
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 35,
+                    "_type" : "VMFile",
+                    "src" : 1,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "_(2)"
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 290,
+                    "duration" : 2012,
+                    "mediaStart" : 127,
+                    "mediaDuration" : 2012,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false,
+                      "default-scale0" : 1.0,
+                      "default-scale1" : 1.0,
+                      "default-translation0" : 0.0,
+                      "default-translation1" : 0.0
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 1,
+                "medias" : [
+                  {
+                    "id" : 36,
+                    "_type" : "AMFile",
+                    "src" : 29,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "10 Deep Character",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.412087912087912
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1852,
+                    "duration" : 450,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 450,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 2,
+                "medias" : [
+                  {
+                    "id" : 37,
+                    "_type" : "AMFile",
+                    "src" : 31,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "SL 07 Dark Build and Drop",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 427,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 657,
+                            "value" : 0.317669694926014,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 713,
+                            "value" : 1.10559141735006,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 720,
+                            "value" : 5.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 728,
+                            "value" : 1.1188053569006,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 801,
+                            "value" : 0.340659340659342,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1999,
+                    "duration" : 470,
+                    "mediaStart" : 427,
+                    "mediaDuration" : 470,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 3,
+                "medias" : [
+                  {
+                    "id" : 38,
+                    "_type" : "AMFile",
+                    "src" : 14,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "György Ligeti Lux Aeterna",
+                      "sampleRate" : 44100,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 1.53061224489796,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 2331,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 2827,
+                            "value" : 0.137362637362637,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 2832,
+                            "value" : 0.274725274725276,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 3239,
+                            "value" : 0.869909724244729,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 3266,
+                            "value" : 0.961538461538461,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 3483,
+                            "value" : 0.961538461538461,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 3554,
+                            "value" : 0.386732628273982,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 3799,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1227,
+                    "duration" : 1479,
+                    "mediaStart" : 2320,
+                    "mediaDuration" : 1479,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 4,
+                "medias" : [
+                  {
+                    "id" : 39,
+                    "_type" : "AMFile",
+                    "src" : 19,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "DS 19 Sub Drop",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 5.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1686,
+                    "duration" : 180,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 180,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 40,
+                    "_type" : "AMFile",
+                    "src" : 14,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "György Ligeti Lux Aeterna",
+                      "sampleRate" : 44100,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 2.11749629347905,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 7379,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 7491,
+                            "value" : 1.23215983949487,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 7659,
+                            "value" : 0.449763112061496,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 7780,
+                            "value" : 0.172804437564964,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 7830,
+                            "value" : 0.137362637362637,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 7943,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 12021,
+                            "value" : 0.696774158471198,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 2090,
+                    "duration" : 585,
+                    "mediaStart" : 7379,
+                    "mediaDuration" : 585,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 5,
+                "medias" : [
+                  {
+                    "id" : 41,
+                    "_type" : "AMFile",
+                    "src" : 24,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "DS 06 Powerful A",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.467032967032967,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 396,
+                            "value" : 0.467032967032967,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 470,
+                            "value" : 0.961538461538462,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1217,
+                    "duration" : 497,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 497,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 42,
+                    "_type" : "AMFile",
+                    "src" : 20,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "AN 19 Low Whoosh B",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 3.57142857142857
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1806,
+                    "duration" : 225,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 225,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 43,
+                    "_type" : "AMFile",
+                    "src" : 22,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "SL 19 Low Whoosh B",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 1.93877551020408
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 2031,
+                    "duration" : 246,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 246,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 6,
+                "medias" : [
+                  {
+                    "id" : 44,
+                    "_type" : "AMFile",
+                    "src" : 21,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "AN 18 Low Whoosh A",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.576923076923077
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1914,
+                    "duration" : 317,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 317,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 7,
+                "medias" : [
+                  {
+                    "id" : 45,
+                    "_type" : "AMFile",
+                    "src" : 28,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "099986838-stinger-horror-violin-screechi",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.0274725274725275
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1957,
+                    "duration" : 186,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 186,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 8,
+                "medias" : [
+                  {
+                    "id" : 46,
+                    "_type" : "AMFile",
+                    "src" : 32,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "AN 19 Sub Drop",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 5.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 290,
+                    "duration" : 224,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 224,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 47,
+                    "_type" : "AMFile",
+                    "src" : 28,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "099986838-stinger-horror-violin-screechi",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.10989010989011
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 2045,
+                    "duration" : 225,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 186,
+                    "scalar" : "75/62",
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 9,
+                "medias" : [
+                  {
+                    "id" : 48,
+                    "_type" : "AMFile",
+                    "src" : 31,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "SL 07 Dark Build and Drop",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 427,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 657,
+                            "value" : 0.317669694926014,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 713,
+                            "value" : 0.657071372115806,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 720,
+                            "value" : 3.57142857142857,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 728,
+                            "value" : 0.741267754088268,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 801,
+                            "value" : 0.340659340659342,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 0,
+                    "duration" : 470,
+                    "mediaStart" : 427,
+                    "mediaDuration" : 470,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 49,
+                    "_type" : "AMFile",
+                    "src" : 28,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "099986838-stinger-horror-violin-screechi",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.32967032967033,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : "31806/251",
+                            "value" : 1.99443413729128,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 2143,
+                    "duration" : 251,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 186,
+                    "scalar" : "251/186",
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 10,
+                "medias" : [
+                  {
+                    "id" : 50,
+                    "_type" : "AMFile",
+                    "src" : 15,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "05 Arriving",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.979020979020979
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 7,
+                    "duration" : 308,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 261,
+                    "scalar" : "308/261",
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 51,
+                    "_type" : "AMFile",
+                    "src" : 17,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "11 Sub Drone",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 17,
+                            "value" : 0.120879120879121,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 259,
+                            "value" : 1.53061224489797,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 336,
+                            "value" : 2.3469387755102,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 869,
+                            "value" : 2.3469387755102,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 893,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 493,
+                    "duration" : 893,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 893,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 11,
+                "medias" : [
+                  {
+                    "id" : 52,
+                    "_type" : "AMFile",
+                    "src" : 17,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "11 Sub Drone",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 2.3469387755102
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1333,
+                    "duration" : 944,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 944,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 12,
+                "medias" : [
+                  {
+                    "id" : 53,
+                    "_type" : "AMFile",
+                    "src" : 14,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "György Ligeti Lux Aeterna",
+                      "sampleRate" : 44100,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 1.53061224489796,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 10738,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 11172,
+                            "value" : 0.297337187134863,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 11625,
+                            "value" : 1.31774535040016,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 11759,
+                            "value" : 0.5217618919542,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 11836,
+                            "value" : 0.174191101058705,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 12021,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1423,
+                    "duration" : 1283,
+                    "mediaStart" : 10738,
+                    "mediaDuration" : 1283,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 13,
+                "medias" : [
+                  {
+                    "id" : 54,
+                    "_type" : "AMFile",
+                    "src" : 2,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "109320068-wind-sandy-wind-medium-strengt",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 126,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 191,
+                            "value" : 0.286923896998524,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 260,
+                            "value" : 2.75510204081633,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 1341,
+                            "value" : 2.75510204081633,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 1520,
+                            "value" : 0.192307692307692,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 290,
+                    "duration" : 1394,
+                    "mediaStart" : 126,
+                    "mediaDuration" : 1394,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 55,
+                    "_type" : "AMFile",
+                    "src" : 2,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "109320068-wind-sandy-wind-medium-strengt",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 180,
+                            "value" : 0.506669946968454,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 424,
+                            "value" : 0.204472144770652,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 869,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 1341,
+                            "value" : 0.741758241758242,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 1520,
+                            "value" : 0.192307692307692,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1684,
+                    "duration" : 399,
+                    "mediaStart" : 253,
+                    "mediaDuration" : 399,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 14,
+                "medias" : [
+                  {
+                    "id" : 56,
+                    "_type" : "AMFile",
+                    "src" : 13,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "021477000-wind-desert-sand",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 1.3265306122449,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 164,
+                            "value" : 0.377230769230769,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 382,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 590,
+                            "value" : 0.670560652342531,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 773,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 290,
+                    "duration" : 393,
+                    "mediaStart" : 382,
+                    "mediaDuration" : 393,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 57,
+                    "_type" : "AMFile",
+                    "src" : 3,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "091740106-pebbles-dropped-small-rocks-gr",
+                      "sampleRate" : 96000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 40,
+                            "value" : 0.384615384615384,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 57,
+                            "value" : 0.384615384615384,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 61,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 683,
+                    "duration" : 61,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 61,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 58,
+                    "_type" : "AMFile",
+                    "src" : 3,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "091740106-pebbles-dropped-small-rocks-gr",
+                      "sampleRate" : 96000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 40,
+                            "value" : 0.478021978021978,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 57,
+                            "value" : 0.175824175824176,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 61,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 773,
+                    "duration" : 61,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 61,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 59,
+                    "_type" : "AMFile",
+                    "src" : 3,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "091740106-pebbles-dropped-small-rocks-gr",
+                      "sampleRate" : 96000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 63,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 72,
+                            "value" : 0.120879120879121,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 80,
+                            "value" : 0.148351648351649,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 131,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 880,
+                    "duration" : 70,
+                    "mediaStart" : 61,
+                    "mediaDuration" : 70,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 60,
+                    "_type" : "AMFile",
+                    "src" : 3,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "091740106-pebbles-dropped-small-rocks-gr",
+                      "sampleRate" : 96000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 63,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 72,
+                            "value" : 0.120879120879121,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 80,
+                            "value" : 0.148351648351649,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 131,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1106,
+                    "duration" : 70,
+                    "mediaStart" : 61,
+                    "mediaDuration" : 70,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 61,
+                    "_type" : "AMFile",
+                    "src" : 13,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "021477000-wind-desert-sand",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 1.3265306122449,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 164,
+                            "value" : 0.186405273506375,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 463,
+                            "value" : 0.320691892892452,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 637,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1684,
+                    "duration" : 506,
+                    "mediaStart" : 159,
+                    "mediaDuration" : 506,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 15,
+                "medias" : [
+                  {
+                    "id" : 62,
+                    "_type" : "AMFile",
+                    "src" : 4,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "091740099-gravel-drop-multiple-granular-",
+                      "sampleRate" : 96000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.0824175824175824
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 683,
+                    "duration" : 43,
+                    "mediaStart" : 159,
+                    "mediaDuration" : 43,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 63,
+                    "_type" : "AMFile",
+                    "src" : 4,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "091740099-gravel-drop-multiple-granular-",
+                      "sampleRate" : 96000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.137362637362637
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 780,
+                    "duration" : 38,
+                    "mediaStart" : 82,
+                    "mediaDuration" : 38,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 64,
+                    "_type" : "AMFile",
+                    "src" : 4,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "091740099-gravel-drop-multiple-granular-",
+                      "sampleRate" : 96000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 10,
+                            "value" : 0.258241758241759,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 34,
+                            "value" : 0.203296703296704,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 45,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 880,
+                    "duration" : 45,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 45,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 65,
+                    "_type" : "AMFile",
+                    "src" : 4,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "091740099-gravel-drop-multiple-granular-",
+                      "sampleRate" : 96000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 10,
+                            "value" : 0.110907610907611,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 34,
+                            "value" : 0.0559625559625562,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 45,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1106,
+                    "duration" : 45,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 45,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 66,
+                    "_type" : "AMFile",
+                    "src" : 13,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "021477000-wind-desert-sand",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 1.3265306122449,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 164,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 517,
+                            "value" : 0.25977542297516,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 652,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 775,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1193,
+                    "duration" : 493,
+                    "mediaStart" : 159,
+                    "mediaDuration" : 493,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 16,
+                "medias" : [
+                  {
+                    "id" : 67,
+                    "_type" : "AMFile",
+                    "src" : 5,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "090015674-metal-shavings-pu-sprinkle-7",
+                      "sampleRate" : 96000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 178,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 186,
+                            "value" : 0.171494955653628,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 203,
+                            "value" : 0.159991680603555,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 227,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 683,
+                    "duration" : 49,
+                    "mediaStart" : 178,
+                    "mediaDuration" : 49,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 68,
+                    "_type" : "AMFile",
+                    "src" : 5,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "090015674-metal-shavings-pu-sprinkle-7",
+                      "sampleRate" : 96000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 227,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 231,
+                            "value" : 0.467032967032967,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 273,
+                            "value" : 0.467032967032967,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 285,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 773,
+                    "duration" : 60,
+                    "mediaStart" : 227,
+                    "mediaDuration" : 60,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 69,
+                    "_type" : "AMFile",
+                    "src" : 5,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "090015674-metal-shavings-pu-sprinkle-7",
+                      "sampleRate" : 96000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 227,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 231,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 273,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 285,
+                            "value" : 0.934065934065934,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 287,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 295,
+                            "value" : 0.357142857142857,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 334,
+                            "value" : 0.357142857142857,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 345,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 880,
+                    "duration" : 58,
+                    "mediaStart" : 287,
+                    "mediaDuration" : 58,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 70,
+                    "_type" : "AMFile",
+                    "src" : 5,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "090015674-metal-shavings-pu-sprinkle-7",
+                      "sampleRate" : 96000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 227,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 231,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 273,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 285,
+                            "value" : 0.934065934065934,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 287,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 295,
+                            "value" : 0.274725274725275,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 334,
+                            "value" : 0.274725274725275,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 345,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1106,
+                    "duration" : 58,
+                    "mediaStart" : 287,
+                    "mediaDuration" : 58,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 17,
+                "medias" : [
+                  {
+                    "id" : 71,
+                    "_type" : "AMFile",
+                    "src" : 6,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "067048273-foley-movement-foley-movement-",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 65,
+                            "value" : 5.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 201,
+                            "value" : 0.432196375053518,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 693,
+                            "value" : 0.840359640359641,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 766,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 385,
+                    "duration" : 766,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 766,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 72,
+                    "_type" : "AMFile",
+                    "src" : 6,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "067048273-foley-movement-foley-movement-",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 20,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 532,
+                            "value" : 0.207544912511195,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 693,
+                            "value" : 4.34065934065934,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 766,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1151,
+                    "duration" : 533,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 533,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 18,
+                "medias" : [
+                  {
+                    "id" : 73,
+                    "_type" : "AMFile",
+                    "src" : 8,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "067048287-foley-movement-foley-movement-",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 8,
+                            "value" : 1.95204048285742e-15,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 43,
+                            "value" : 0.946508729996794,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 95,
+                            "value" : 0.521978021978023,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 103,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 370,
+                    "duration" : 100,
+                    "mediaStart" : 5,
+                    "mediaDuration" : 100,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 74,
+                    "_type" : "AMFile",
+                    "src" : 8,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "067048287-foley-movement-foley-movement-",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 28,
+                            "value" : 0.494505494505494,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 95,
+                            "value" : 0.494505494505494,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 103,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 552,
+                    "duration" : 105,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 105,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 75,
+                    "_type" : "AMFile",
+                    "src" : 8,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "067048287-foley-movement-foley-movement-",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 8,
+                            "value" : 0.302197802197802,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 95,
+                            "value" : 0.302197802197802,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 103,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 818,
+                    "duration" : 105,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 105,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 76,
+                    "_type" : "AMFile",
+                    "src" : 8,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "067048287-foley-movement-foley-movement-",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 8,
+                            "value" : 0.32967032967033,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 95,
+                            "value" : 0.32967032967033,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 103,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 979,
+                    "duration" : 105,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 105,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 77,
+                    "_type" : "AMFile",
+                    "src" : 8,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "067048287-foley-movement-foley-movement-",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 8,
+                            "value" : 0.961538461538461,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 95,
+                            "value" : 0.961538461538461,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 103,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1127,
+                    "duration" : 66,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 66,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 78,
+                    "_type" : "AMFile",
+                    "src" : 8,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "067048287-foley-movement-foley-movement-",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 8,
+                            "value" : 1.12244897959184,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 95,
+                            "value" : 1.12244897959184,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 103,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1405,
+                    "duration" : 105,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 105,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 79,
+                    "_type" : "AMFile",
+                    "src" : 8,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "067048287-foley-movement-foley-movement-",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 8,
+                            "value" : 0.302197802197803,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 95,
+                            "value" : 0.521978021978022,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 103,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1521,
+                    "duration" : 105,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 105,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 80,
+                    "_type" : "AMFile",
+                    "src" : 8,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "067048287-foley-movement-foley-movement-",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 8,
+                            "value" : 0.329670329670329,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 95,
+                            "value" : 0.329670329670329,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 103,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1635,
+                    "duration" : 51,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 51,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 19,
+                "medias" : [
+                  {
+                    "id" : 81,
+                    "_type" : "AMFile",
+                    "src" : 9,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "116196292-weapon-and-gear-movement-milit",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0",
+                    "parameters" : {
+                      "volume" : 5.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1106,
+                    "duration" : 78,
+                    "mediaStart" : 144,
+                    "mediaDuration" : 78,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 82,
+                    "_type" : "AMFile",
+                    "src" : 9,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "116196292-weapon-and-gear-movement-milit",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0",
+                    "parameters" : {
+                      "volume" : 5.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1232,
+                    "duration" : 112,
+                    "mediaStart" : 137,
+                    "mediaDuration" : 112,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 83,
+                    "_type" : "AMFile",
+                    "src" : 9,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "116196292-weapon-and-gear-movement-milit",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0",
+                    "parameters" : {
+                      "volume" : 0.796703296703297
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1408,
+                    "duration" : 122,
+                    "mediaStart" : 351,
+                    "mediaDuration" : 122,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 20,
+                "medias" : [
+                  {
+                    "id" : 84,
+                    "_type" : "AMFile",
+                    "src" : 4,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "091740099-gravel-drop-multiple-granular-",
+                      "sampleRate" : 96000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.659340659340659
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1232,
+                    "duration" : 93,
+                    "mediaStart" : 230,
+                    "mediaDuration" : 93,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 21,
+                "medias" : [
+                  {
+                    "id" : 85,
+                    "_type" : "AMFile",
+                    "src" : 5,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "090015674-metal-shavings-pu-sprinkle-7",
+                      "sampleRate" : 96000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 227,
+                            "value" : 0.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 231,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 273,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 285,
+                            "value" : 0.934065934065934,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 395,
+                            "value" : 0.934065934065934,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 426,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1227,
+                    "duration" : 72,
+                    "mediaStart" : 354,
+                    "mediaDuration" : 72,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 22,
+                "medias" : [
+                  {
+                    "id" : 86,
+                    "_type" : "AMFile",
+                    "src" : 7,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "067034448-cloth-fabric-cloth-flapping-fi",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0",
+                    "parameters" : {
+                      "volume" : 0.494505494505495
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1211,
+                    "duration" : 81,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 81,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 23,
+                "medias" : [
+                  {
+                    "id" : 87,
+                    "_type" : "AMFile",
+                    "src" : 7,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "067034448-cloth-fabric-cloth-flapping-fi",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 24,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 20,
+                            "value" : 1.0,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 37,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1257,
+                    "duration" : 42,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 42,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 24,
+                "medias" : [
+                  {
+                    "id" : 88,
+                    "_type" : "AMFile",
+                    "src" : 10,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "113440898-clothes-cloth-rustle-movement",
+                      "sampleRate" : 44100,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.43956043956044
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1211,
+                    "duration" : 99,
+                    "mediaStart" : 18,
+                    "mediaDuration" : 99,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 89,
+                    "_type" : "AMFile",
+                    "src" : 10,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "113440898-clothes-cloth-rustle-movement",
+                      "sampleRate" : 44100,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 0.408523503664981,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 320,
+                            "value" : 0.896131805095567,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 368,
+                            "value" : 0.487608301430586,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1386,
+                    "duration" : 87,
+                    "mediaStart" : 220,
+                    "mediaDuration" : 87,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 25,
+                "medias" : [
+                  {
+                    "id" : 90,
+                    "_type" : "AMFile",
+                    "src" : 11,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "109320066-miscellaneous-movements-moveme",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.494505494505495
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1211,
+                    "duration" : 113,
+                    "mediaStart" : 114,
+                    "mediaDuration" : 113,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 91,
+                    "_type" : "AMFile",
+                    "src" : 11,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "109320066-miscellaneous-movements-moveme",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 1.12244897959184
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1380,
+                    "duration" : 122,
+                    "mediaStart" : 105,
+                    "mediaDuration" : 122,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 26,
+                "medias" : [
+                  {
+                    "id" : 92,
+                    "_type" : "AMFile",
+                    "src" : 12,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "109320071-miscellaneous-movements-moveme",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.412087912087912
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1211,
+                    "duration" : 146,
+                    "mediaStart" : 1252,
+                    "mediaDuration" : 146,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 93,
+                    "_type" : "AMFile",
+                    "src" : 12,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "109320071-miscellaneous-movements-moveme",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 3.97959183673469
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1380,
+                    "duration" : 165,
+                    "mediaStart" : 1476,
+                    "mediaDuration" : 165,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 27,
+                "medias" : [
+                  {
+                    "id" : 94,
+                    "_type" : "AMFile",
+                    "src" : 12,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "109320071-miscellaneous-movements-moveme",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : {
+                        "type" : "double",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : 1.73469387755102,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 2231,
+                            "value" : 1.73469387755102,
+                            "duration" : 0
+                          },
+                          {
+                            "time" : 2249,
+                            "value" : 0.0,
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1099,
+                    "duration" : 52,
+                    "mediaStart" : 2193,
+                    "mediaDuration" : 52,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 95,
+                    "_type" : "AMFile",
+                    "src" : 12,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "109320071-miscellaneous-movements-moveme",
+                      "sampleRate" : 48000,
+                      "bitDepth" : 16,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.384615384615385
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1211,
+                    "duration" : 99,
+                    "mediaStart" : 2406,
+                    "mediaDuration" : 99,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 28,
+                "medias" : [
+                ]
+              },
+              {
+                "trackIndex" : 29,
+                "medias" : [
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "trackAttributes" : [
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      }
+    ],
+    "captionAttributes" : {
+      "enabled" : true,
+      "fontName" : "Arial",
+      "fontSize" : 64,
+      "backgroundColor" : [ 0, 0, 0, 191],
+      "foregroundColor" : [ 255, 255, 255, 255],
+      "lang" : "en",
+      "alignment" : 0,
+      "defaultFontSize" : true,
+      "opacity" : 0.5,
+      "backgroundEnabled" : true,
+      "backgroundOnlyAroundText" : true
+    },
+    "backgroundColor" : [ 0, 0, 0, 255]
+  },
+  "metadata" : {
+    "AutoSaveFile" : "C:\\Users\\mattorialist\\AppData\\Local\\TechSmith\\Camtasia Studio\\9.0\\Auto-Saves\\WakeUpEdit_112139987.autosave.tscproj",
+    "CanvasZoom" : 50,
+    "Date" : "2019-11-17 01:33:05 PM",
+    "Fit" : 0,
+    "IsAutoSave" : "0",
+    "Language" : "ENU",
+    "ProfileName" : "MP4 only (up to 1080p)",
+    "ProjectDimensionsChanged" : "1",
+    "Title" : "WakeUpEdit_1",
+    "audioNarrationNotes" : "",
+    "calloutStyle" : "Basic",
+    "canvasDetached" : "False",
+    "canvasPositionHeight" : "0",
+    "canvasPositionLeft" : "0",
+    "canvasPositionTop" : "0",
+    "canvasPositionWidth" : "0"
+  }
+}
